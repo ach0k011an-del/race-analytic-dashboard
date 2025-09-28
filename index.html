@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>RedLine352 – Live Race Analytics</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial;margin:0;background:#111;color:#eee;}
+    header{background:#ff4b00;padding:1rem 2rem;}
+    header h1{margin:0;font-size:1.6rem;}
+    #controls{display:flex;gap:1rem;padding:1rem 2rem;flex-wrap:wrap;background:#1a1a1a;}
+    select,button{padding:.5rem 1rem;font-size:1rem;}
+    #charts{display:grid;grid-template-columns:repeat(auto-fit,minmax(420px,1fr));gap:1.5rem;padding:2rem;}
+    .chart-box{background:#222;border-radius:8px;padding:1rem;}
+  </style>
+</head>
+<body>
+<header>
+  <h1>RedLine352 Analytics – Interactive Dashboard</h1>
+  <p>Upload any CSV → instant graphs. Built by Achintya Augustin</p>
+</header>
+
+<div id="controls">
+  <input type="file" id="csvFile" accept=".csv">
+  <label>Session:</label>
+  <select id="sessionSelect"><option>All</option></select>
+  <button id="resetZoom">Reset Zoom</button>
+</div>
+
+<div id="charts">
+  <div id="lapTimePlot" class="chart-box"></div>
+  <div id="speedPlot"   class="chart-box"></div>
+  <div id="throttlePlot" class="chart-box"></div>
+  <div id="setupTable"  class="chart-box"></div>
+</div>
+
+<script src="js/plotly-2.27.0.min.js"></script>
+<script src="js/dashboard.js"></script>
+</body>
+</html>
+
