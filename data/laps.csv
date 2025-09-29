@@ -1,0 +1,6 @@
+Session,Lap,Speed,Throttle,LapTime,TirePressureFL,TirePressureFR,TirePressureRL,TirePressureRR,WingAngle
+S1,1,180,95,92.3,22.1,22.3,21.8,21.9,8
+S1,2,182,97,91.8,22.0,22.2,21.7,21.8,8
+S1,3,185,98,91.1,21.9,22.1,21.6,21.7,8
+S2,1,188,99,90.4,21.8,22.0,21.5,21.6,6
+S2,2,190,100,90.0,21.7,21.9,21.4,21.5,6
